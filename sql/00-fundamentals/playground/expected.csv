@@ -1,0 +1,6 @@
+id,name,price_cents,in_stock
+1,oats,399,True
+2,kale,249,True
+3,chips,199,False
+4,apples,350,True
+5,soda,150,False

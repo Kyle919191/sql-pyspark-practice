@@ -1,0 +1,4 @@
+event_date,n_tags,tags
+2024-03-01,2,"spark,sql"
+2024-03-02,1,pandas
+2024-03-03,2,"ml,sql"

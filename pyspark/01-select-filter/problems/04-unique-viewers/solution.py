@@ -1,0 +1,20 @@
+from pathlib import Path
+
+from pyspark.sql import SparkSession
+from pyspark.sql import functions as F
+
+spark = (
+    SparkSession.builder.appName("practice")
+    .master("local[*]")
+    .config("spark.ui.showConsoleProgress", "false")
+    .getOrCreate()
+)
+spark.sparkContext.setLogLevel("ERROR")
+
+views = (
+    spark.read.option("header", True)
+    .option("inferSchema", True)
+    .csv(str(Path(__file__).parent / "views.csv"))
+)
+
+result = views.filter(F.col("viewer_id") != F.col("author_id")).select("viewer_id").distinct()

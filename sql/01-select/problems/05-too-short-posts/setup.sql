@@ -1,0 +1,11 @@
+CREATE TABLE posts (
+    post_id INTEGER,
+    content VARCHAR
+);
+
+INSERT INTO posts VALUES
+    (1, 'hello world!!!!'),
+    (2, 'a much longer post about sql'),
+    (3, 'too short'),
+    (4, 'exactly fifteen!'),
+    (5, '1234567890123456');

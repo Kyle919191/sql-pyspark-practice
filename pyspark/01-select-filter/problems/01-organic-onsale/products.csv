@@ -1,0 +1,6 @@
+product_id,name,organic,on_sale
+1,apples,Y,Y
+2,chips,N,Y
+3,kale,Y,N
+4,oats,Y,Y
+5,soda,N,N
